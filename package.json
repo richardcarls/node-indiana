@@ -1,0 +1,33 @@
+{
+  "name": "indiana",
+  "version": "0.0.1",
+  "description": "IndieWeb-enabled blogging platform.",
+  "author": {
+    "name": "Richard Carls",
+    "email": "richard.j.carls@gmail.com",
+    "url": "https://richardcarls.com"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "nodemon server.js"
+  },
+  "engines" : {
+    "node": ">=7.6.0"
+  },
+  "dependencies": {
+    "chokidar": "^1.6.1",
+    "gray-matter": "^2.1.0",
+    "js-yaml": "^3.7.0",
+    "koa": "^2.2.0",
+    "koa-handlebars": "^2.0.0",
+    "koa-router": "^7.1.1",
+    "koa-static": "^2.1.0",
+    "markdown-it": "^8.2.2",
+    "mongodb": "^2.2.25",
+    "mz": "^2.6.0",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

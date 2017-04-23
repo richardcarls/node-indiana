@@ -1,0 +1,13 @@
+<main>
+  <a href="../">../</a>
+  {{#if @directory}}
+    <ol>
+      {{#each @directory}}
+        <li>
+          {{#if __isdir}}DIR: {{/if}}
+          <a href="{{__name}}{{#if __isdir}}/{{/if}}">{{__name}}</a>
+        </li>
+      {{/each}}
+    </ol>
+  {{/if}}
+</main>

@@ -4,8 +4,8 @@
     <ol>
       {{#each @directory}}
         <li>
-          {{#if __isdir}}DIR: {{/if}}
-          <a href="{{__name}}{{#if __isdir}}/{{/if}}">{{__name}}</a>
+          {{#if isdir}}DIR: {{/if}}
+          <a href="{{name}}{{#if isdir}}/{{/if}}">{{name}}</a>
         </li>
       {{/each}}
     </ol>
